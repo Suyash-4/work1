@@ -5,7 +5,20 @@
   --foreground: #171717;
 }
 
+* {
+  font-family: poppins;
+}
 
+.customHover {
+  transition: all 0.3s ease-in-out;
+}
+
+.customHover:hover {
+  z-index: 10;
+  transform: translateY(-1px) scale(1.07) rotate(-3deg);
+  filter: grayscale(0%);
+  box-shadow: 10px 20px 30px 0px rgba(0, 0, 0, 0.6);
+}
 
 @theme inline {
   --color-background: var(--background);
