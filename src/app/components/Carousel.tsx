@@ -1,47 +1,50 @@
 "use client";
 
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
 interface CarouselProps {
-  currentSlide: number;
   slides: string[][];
-  itemsPerSlide: number;
 }
 
-const Carousel = ({ currentSlide, slides, itemsPerSlide }: CarouselProps) => {
-  return (
-    <div className="py-4 px-4 rounded-3xl overflow-hidden flex-1">
-      <div
-        className="flex h-full transition-all duration-500 "
-        style={{
-          transform: `translateX(-${currentSlide * 100}%)`,
-        }}
-      >
-        {slides.map((slide, slideIndex) => (
-          <div
-            key={slideIndex}
-            className=" shrink-0 w-full h-full flex gap-5 relative bg-cover bg-center bg-no-repeat"
-          >
-            {[...Array(itemsPerSlide)].map((_, itemIndex) => {
-              const imageUrl = slide[itemIndex];
+const Carousel = ({ slides }: CarouselProps) => {
+  const flatImages = slides.flat();
 
-              if (!imageUrl) {
-                return <div key={itemIndex} className="w-[180px] h-[170px]" />;
-              }
-              return (
-                <Image
-                  key={itemIndex}
-                  src={imageUrl}
-                  alt="Some Image"
-                  width={180}
-                  height={170}
-                  className="customHover rounded-3xl grayscale  "
-                />
-              );
-            })}
-          </div>
+  return (
+    <div className="w-full h-full py-10 xl:py-6 overflow-hidden ">
+      <Swiper
+        modules={[Navigation]}
+        navigation={{
+          nextEl: ".custom-next",
+          prevEl: ".custom-prev",
+        }}
+        spaceBetween={15}
+        breakpoints={{
+          0: { slidesPerView: 1 },
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+          1440: { slidesPerView: 4 },
+        }}
+        className="w-full h-full "
+      >
+        {flatImages.map((imageUrl, index) => (
+          <SwiperSlide
+            key={index}
+            className="flex justify-center items-center h-full py-6 xl:py-4 "
+          >
+            <Image
+              src={imageUrl}
+              alt={`Slide ${index}`}
+              width={170}
+              height={180}
+              className="rounded-3xl grayscale object-cover w-40 h-40 customHover"
+            />
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </div>
   );
 };

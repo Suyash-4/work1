@@ -9,6 +9,10 @@
   font-family: poppins;
 }
 
+@theme {
+  --breakpoint-mmd: 
+}
+
 .customHover {
   transition: all 0.3s ease-in-out;
 }
