@@ -51,7 +51,7 @@ const Page = () => {
             {/* Left Section, TOp Section */}
             <div className="col-span-2 row-span-2 xl:row-span-4 h-full w-full bg-[#565758] p-5 rounded-3xl border border-[#96bee6]" />
             {/* Right Section, Bottom Section  */}
-            <div className="col-span-2 row-span-2 xl:row-span-4 h-full w-full flex xl:flex-col justify-center items-center gap-5 ">
+            <div className="col-span-2 row-span-2 xl:row-span-4 h-full w-full flex xl:flex-col justify-center items-center gap-3 ">
               <Box1 />
               <div className="hidden w-full xl:flex justify-center">
                 <HorizontalLine />

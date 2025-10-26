@@ -14,7 +14,7 @@ const Carousel = ({ slides }: CarouselProps) => {
   const flatImages = slides.flat();
 
   return (
-    <div className="w-full h-full py-10 xl:py-6 overflow-hidden ">
+    <div className="w-full h-full py-10 xl:py-5 overflow-hidden ">
       <Swiper
         modules={[Navigation]}
         navigation={{
@@ -33,7 +33,7 @@ const Carousel = ({ slides }: CarouselProps) => {
         {flatImages.map((imageUrl, index) => (
           <SwiperSlide
             key={index}
-            className="flex justify-center items-center h-full py-6 xl:py-4 "
+            className="flex justify-center items-center h-full py-6 xl:py-3 "
           >
             <Image
               src={imageUrl}

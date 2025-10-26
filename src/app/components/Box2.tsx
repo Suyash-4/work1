@@ -33,7 +33,7 @@ const Box2 = ({ handleTriggerFileInput, slides }: Box2Props) => {
       </div>
 
       {/* Options Container */}
-      <div className="p-3 w-full overflow-hidden ">
+      <div className="p-3 h-full w-full overflow-hidden ">
         {/* Top row: Gallery + buttons */}
         <div className="w-full flex items-center gap-10 xl:gap-20 justify-center md:justify-between">
           {/* Top Buttons */}
