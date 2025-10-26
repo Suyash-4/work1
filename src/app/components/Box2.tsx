@@ -44,7 +44,7 @@ const Box2 = ({ handleTriggerFileInput, slides }: Box2Props) => {
           <div className="flex gap-2 lg:gap-5 items-center">
             <button
               onClick={handleTriggerFileInput}
-              className="bg-[rgb(64,70,77)] shadow-[inset_1px_1px_5px_rgba(255,255,255,0.3),-3px_-2px_10px_rgba(255,255,255,0.3),3px_3px_8px_rgba(0,0,0,0.8)] p-2 xl:px-4 xl:py-2 rounded-full xl:font-semibold text-[10px] xl:text-sm flex items-center justify-center gap-2"
+              className="bg-[rgb(64,70,77)] shadow-[inset_1px_1px_5px_rgba(255,255,255,0.3),-3px_-2px_10px_rgba(255,255,255,0.3),3px_6px_8px_rgba(0,0,0,0.8)] p-2 xl:px-4 xl:py-3 rounded-full xl:font-semibold text-[10px] xl:text-sm flex items-center justify-center gap-2"
             >
               <span className="lg:hidden w-3 h-3 flex items-center justify-center rounded-full text-sm font-bold">
                 +

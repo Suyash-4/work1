@@ -34,8 +34,11 @@ const Box1 = () => {
               <Link
                 key={tab}
                 href="#"
-                className="flex-1 gap-10 z-2 p-3 focus:bg-neutral-800 hover:bg-linear-to-r hover:from-neutral-800 hover:to-neutral-800 rounded-2xl text-[10px] lg:text-sm xl:text-lg flex justify-center 
-                        focus:shadow-[0px_-25px_100px_7px_#37415199,0px_15px_50px_15px_#000000]"
+                className="flex-1 gap-10 z-2 p-3 rounded-2xl text-[10px] lg:text-sm xl:text-lg flex justify-center
+              hover:text-white focus:text-white
+              transition-all duration-400 ease-in-out
+            focus:bg-neutral-800 hover:bg-linear-to-r hover:from-neutral-900 hover:to-neutral-800 
+              focus:shadow-[0px_-25px_100px_7px_#37415199,0px_15px_50px_15px_#000000]"
               >
                 {tab}
               </Link>
