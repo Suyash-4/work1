@@ -29,12 +29,12 @@ const Box1 = () => {
         {/* Content */}
         <div className="py-5 pr-3 pl-2 w-full flex flex-col items-center gap-4 xl:gap-5">
           {/* Tabs */}
-          <div className="p-2 flex xl:gap-3 xl:p-3 bg-neutral-900 w-full rounded-3xl text-[#A3ADB2]  font-bold ">
+          <div className="p-2 flex xl:gap-3 xl:p-3  2xl:p-4 bg-neutral-900 w-full rounded-3xl text-[#A3ADB2]  font-bold text-[10px] lg:text-sm 2xl:text-lg ">
             {["About Me", "Experience", "Recommended"].map((tab) => (
               <Link
                 key={tab}
                 href="#"
-                className="flex-1 gap-10 z-2 p-3 rounded-2xl text-[10px] lg:text-sm xl:text-lg flex justify-center
+                className="flex-1 gap-10 z-2 p-2 xl:p-3 rounded-2xl  flex justify-center
               hover:text-white focus:text-white
               transition-all duration-400 ease-in-out
             focus:bg-neutral-800 hover:bg-linear-to-r hover:from-neutral-900 hover:to-neutral-800 
@@ -47,7 +47,7 @@ const Box1 = () => {
 
           {/* About Content  */}
           <div
-            className="h-full xl:h-40 w-full px-5 overflow-auto flex flex-col gap-5 text-sm xl:text-lg 
+            className="h-full xl:h-40 w-full xl:px-5 overflow-auto flex flex-col gap-5 text-sm xl:text-lg 
                     [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-transparent
                     [&::-webkit-scrollbar-thumb]:bg-gray-400 [&::-webkit-scrollbar-thumb]:rounded-full
                     text-[#969696] text-justify"

@@ -12,7 +12,7 @@
 }
 
 @theme {
-  --breakpoint-mmd: ;
+  --breakpoint-greaterThanXL: 1440px;
 }
 
 .customHover {
