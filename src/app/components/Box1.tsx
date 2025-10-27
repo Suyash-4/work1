@@ -47,7 +47,7 @@ const Box1 = () => {
 
           {/* About Content  */}
           <div
-            className="customLayoutFixContentBox1 h-full xl:h-40 w-full xl:px-5 overflow-auto flex flex-col gap-5 text-sm xl:text-lg 
+            className="customLayoutFixContentBox1 h-full xl:h-40 w-full xl:px-5 overflow-auto flex flex-col gap-5 text-sm xl:text-lg  
                     [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-transparent
                     [&::-webkit-scrollbar-thumb]:bg-gray-400 [&::-webkit-scrollbar-thumb]:rounded-full
                     text-[#969696] text-justify"
