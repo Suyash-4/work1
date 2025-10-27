@@ -14,7 +14,7 @@ const Carousel = ({ slides }: CarouselProps) => {
   const flatImages = slides.flat();
 
   return (
-    <div className="w-full h-full md:py-20 lg:py-1 xl:py-4 greaterThanXL:py-10 2xl:py-5 overflow-hidden ">
+    <div className="w-full h-full md:py-10 lg:py-1 xl:py-4 greaterThanXL:py-10 2xl:py-5 overflow-hidden ">
       <Swiper
         modules={[Navigation]}
         navigation={{
@@ -40,7 +40,7 @@ const Carousel = ({ slides }: CarouselProps) => {
               alt={`Slide ${index}`}
               width={170}
               height={180}
-              className="rounded-3xl grayscale object-cover md:w-25 md:h-25 lg:w-30 lg:h-30 2xl:w-42 2xl:h-42 customHover"
+              className="rounded-3xl grayscale object-cover md:w-25 md:h-25 lg:w-30 lg:h-30 2xl:w-40 2xl:h-40 customHover"
             />
           </SwiperSlide>
         ))}
