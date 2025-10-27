@@ -4,19 +4,38 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-poppins: 'Poppins',sans-serif;
+  --font-poppins: "Poppins", sans-serif;
 }
 
 * {
   font-family: var(--font-poppins);
 }
 
-@theme {
-  --breakpoint-greaterThanXL: 1440px;
-}
-
 .customHover {
   transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-height: 730px) {
+  .customLayoutFixBox1 {
+    font-size: 17px;
+    padding: 2;
+  }
+  .customLayoutFixContentBox1 {
+    height: 100px;
+    font-size: 15px;
+  }
+  .customLayoutFixBox2 {
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .customLayoutFixCarousel {
+    height: 110px;
+    width: 110px;
+  }
+  .customLayoutFixCarouselMainProperty{
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
 }
 
 .customHover:hover {

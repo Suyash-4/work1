@@ -47,7 +47,7 @@ const Page = () => {
       <div className="relative h-screen w-screen">
         <div className="h-full w-full bg-black px-10 py-10 xl:px-23 xl:py-15 flex items-center justify-center">
           {/* Boxes Container */}
-          <div className="relative grid w-full h-full bg-linear-to-b from-[#272b30] to-[#1b1d21] p-10 xl:pt-15 xl:pb-25 xl:pl-8 xl:pr-15 rounded-3xl grid-rows-4 grid-cols-2 2xl:grid-cols-4 gap-5 xl:gap-10   ">
+          <div className="relative grid w-full h-full bg-linear-to-b from-[#272b30] to-[#1b1d21] p-10 xl:pt-15 xl:pb-25 2xl:pb-13 xl:pl-8 xl:pr-15 2xl:pr-10 rounded-3xl grid-rows-4 grid-cols-2 2xl:grid-cols-4 gap-5 xl:gap-10   ">
             {/* Left Section, TOp Section */}
             <div className="col-span-2 row-span-2 2xl:row-span-4 h-full w-full bg-[#565758] p-5 rounded-3xl border border-[#96bee6]" />
             {/* Right Section, Bottom Section  */}
